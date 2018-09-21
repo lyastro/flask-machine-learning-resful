@@ -1,6 +1,6 @@
 import numpy as np
 from flask import Flask, abort, jsonify, request
-import cPickle as pickle 
+import pickle 
 
 random_forest_model = pickle.load(open("rfc.pkl","rb"))
 
@@ -16,10 +16,10 @@ def predict():
      predict_request = np.array(predict_request)
 
      # Predict using the random forest model
-     y = random_forest_model.predict(predict_request)
+     y = random_forest_model.predict([predict_request])
 
      # Return prediction
-     output = [y[0]]
+     output = y[0].tolist()
      return jsonify(results=output)
 
 if __name__ == '__main__':

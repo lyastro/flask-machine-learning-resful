@@ -2,13 +2,16 @@
 
 ## Overview
 
-This is the receipt for "How to productionize machine learning models using Flask as RESTful APIs" by [Ahmed Djebali](https://goo.gl/dV9EkX).
+This is forked from [Ahmed Djebali](https://github.com/a-djebali/flask-machine-learning-resful).
+The orignal code is witten for python2.
+
+This repositories is made for python3. The basic functions are exactly same.
 
 ## Dependencies
 
 All included in the iPython notebook.
 
-## Usage 
+## Usage
 
 * Open the terminal. If you're using anaconda just install Flask by typing ```$conda install flask``` or ```$pip install flask```. Then run the notebook ```$jupyter notebook``` in terminal in the main directory. All the instructions are in there.
 
